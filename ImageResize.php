@@ -197,7 +197,7 @@ class ImageResize {
 		//get cache url
 		$cacheUrl = Yii::getAlias($this->cachePath);
 		//generate file
-		$resizedFilePath = self::generateImageWithOriginalSize($normalizePath, $width, $height, $mode, $quality, $fileName);
+		$resizedFilePath = self::generateImageWithOriginalSize($normalizePath, $fileName);
 		//get resized file
 		$normalizeResizedFilePath = FileHelper::normalizePath($resizedFilePath);
 		$resizedFileName = pathinfo($normalizeResizedFilePath, PATHINFO_BASENAME);
